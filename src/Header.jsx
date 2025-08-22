@@ -9,6 +9,7 @@ function Header() {
           <li><a href="/contact">Contact</a></li>
         </ul>
       </nav>
+      <hr></hr>
     </header>
   );
 }
