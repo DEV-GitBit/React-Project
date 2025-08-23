@@ -35,3 +35,19 @@
   /* box-shadow: 3px 3px 2px grey; */
   /* display: inline-block; */
 }
+.welcome-msg {
+  color: whitesmoke;
+  background-color: green;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  margin: 0px;
+}
+.login-prompt {
+  color: whitesmoke;
+  background-color: red;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  margin: 0px;
+}

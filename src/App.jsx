@@ -3,11 +3,14 @@ import Header from "./Header.jsx"
 import Card from "./Card.jsx"
 import Buttons from "./Buttons.jsx"
 import Students from "./Students.jsx"
+import Greetings from "./Greetings.jsx"
 
 function App() {
   return (
     <>
       <Header></Header>
+      <hr></hr>
+      <Greetings isLoggedIn={true} username="Rishabh"/>
       <hr></hr>
       <Card></Card>
       <hr></hr>
