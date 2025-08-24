@@ -4,8 +4,22 @@ import Card from "./Card.jsx"
 import Buttons from "./Buttons.jsx"
 import Students from "./Students.jsx"
 import Greetings from "./Greetings.jsx"
+import Lists from "./Lists.jsx"
 
 function App() {
+const fruits = [{name:"Apple",calories:50},
+                {name:"Cherry",calories:60},
+                {name:"Banana",calories:100},
+                {name:"Date",calories:75}];
+const vegetables = [{name:"Broccoli",calories:55},
+                    {name:"Carrot",calories:41},
+                    {name:"Spinach",calories:23},
+                    {name:"Potato",calories:77}];
+
+const desserts = [{name:"Ice Cream",calories:207},
+                  {name:"Brownie",calories:112},
+                  {name:"Cupcake",calories:305},
+                  {name:"Donut",calories:195}];
   return (
     <>
       <Header></Header>
@@ -19,9 +33,13 @@ function App() {
       <Students name="Uncle John" age={52} isEnrolled={false} />
       <Students/>
       <hr></hr>
-      <Buttons></Buttons>
+      <Buttons />
       <hr></hr>
-      <Footer></Footer>
+      <Lists items={fruits} category="Fruits"/>
+      <Lists items={vegetables} category="Vegetables"/>
+      <Lists items={desserts} category="Desserts"/>
+      <hr></hr>
+      <Footer />
     </>
   )
 }
