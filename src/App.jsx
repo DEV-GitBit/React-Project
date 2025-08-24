@@ -7,38 +7,36 @@ import Greetings from "./Greetings.jsx"
 import Lists from "./Lists.jsx"
 
 function App() {
-const fruits = [{name:"Apple",calories:50},
+var fruits = [{name:"Apple",calories:"app"},
                 {name:"Cherry",calories:60},
                 {name:"Banana",calories:100},
                 {name:"Date",calories:75}];
-const vegetables = [{name:"Broccoli",calories:55},
-                    {name:"Carrot",calories:41},
-                    {name:"Spinach",calories:23},
-                    {name:"Potato",calories:77}];
+                
+var vegetables = [];
 
-const desserts = [{name:"Ice Cream",calories:207},
+var desserts = [{name:"Ice Cream",calories:207},
                   {name:"Brownie",calories:112},
                   {name:"Cupcake",calories:305},
                   {name:"Donut",calories:195}];
   return (
     <>
-      <Header></Header>
-      <hr></hr>
+      <Header />
+      <hr/>
       <Greetings isLoggedIn={true} username="Rishabh"/>
-      <hr></hr>
-      <Card></Card>
-      <hr></hr>
+      <hr />
+      <Card />
+      <hr/>
       <Students name="Peter Parker" age={27} isEnrolled={true} />
       <Students name="Aunt May" age={50} isEnrolled={false} />
       <Students name="Uncle John" age={52} isEnrolled={false} />
       <Students/>
-      <hr></hr>
+      <hr />
       <Buttons />
-      <hr></hr>
-      <Lists items={fruits} category="Fruits"/>
-      <Lists items={vegetables} category="Vegetables"/>
-      <Lists items={desserts} category="Desserts"/>
-      <hr></hr>
+      <hr />
+      {fruits.length > 0 ? (<Lists items={fruits} category="Fruits"/>) : undefined}
+      {vegetables.length > 0 ? (<Lists items={vegetables} category="Vegetables"/>) : undefined}
+      {desserts.length > 0 ? (<Lists items={desserts} category="Desserts"/>) : undefined}
+      <hr />
       <Footer />
     </>
   )
