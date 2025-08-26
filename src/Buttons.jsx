@@ -1,9 +1,17 @@
 function Buttons() {
+  let count = 0;
+
   const clickHandler = () => { //if addiing without parameter then the call will not need ().
-      alert('Submitted!');
+    if (count < 5) {
+      count++;
+      console.log(`Submitted ${count} times`);
     }
+    else {
+      console.log(`You have reached the limit`);
+    }
+  }
   const clickHandler2 = (name) => { //if adding with parameter then the call will need ().
-      alert(`${name} it is cancelled!`);
+      console.log(`${name} it is cancelled!`);
     }
   const style1 = {
       backgroundColor: 'blue',
