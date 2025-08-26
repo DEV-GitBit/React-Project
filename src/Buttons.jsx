@@ -10,8 +10,9 @@ function Buttons() {
       console.log(`You have reached the limit`);
     }
   }
-  const clickHandler2 = (name) => { //if adding with parameter then the call will need ().
-      console.log(`${name} it is cancelled!`);
+  const clickHandler2 = (e) => { //if adding with parameter then the call will need ().
+    console.log(`Cancelled`);
+    e.target.textContent=`Cancelled!!`
     }
   const style1 = {
       backgroundColor: 'blue',
@@ -38,7 +39,7 @@ function Buttons() {
   return (
   <>
   <button style={style1} onClick={clickHandler}>Submit</button> 
-  <button style={style2} onClick={() => clickHandler2(`Rishabh`)}>Cancel</button>
+  <button style={style2} onDoubleClick={(e) => clickHandler2(e)}>Cancel</button>
   </>
   );
 
