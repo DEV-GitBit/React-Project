@@ -1,8 +1,10 @@
 function Buttons() {
-  const clickHandler = () => {
+  const clickHandler = () => { //if addiing without parameter then the call will not need ().
       alert('Submitted!');
     }
-
+  const clickHandler2 = (name) => { //if adding with parameter then the call will need ().
+      alert(`${name} it is cancelled!`);
+    }
   const style1 = {
       backgroundColor: 'blue',
       color: 'white',
@@ -27,8 +29,8 @@ function Buttons() {
 
   return (
   <>
-  <button style={style1} onClick={() => clickHandler()}>Submit</button>
-  <button style={style2}>Cancel</button>
+  <button style={style1} onClick={clickHandler}>Submit</button> 
+  <button style={style2} onClick={() => clickHandler2(`Rishabh`)}>Cancel</button>
   </>
   );
 
