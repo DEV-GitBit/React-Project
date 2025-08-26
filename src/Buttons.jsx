@@ -1,4 +1,7 @@
 function Buttons() {
+  const clickHandler = () => {
+      alert('Submitted!');
+    }
 
   const style1 = {
       backgroundColor: 'blue',
@@ -9,7 +12,6 @@ function Buttons() {
       borderRadius: '5px',
       cursor: 'pointer',
       fontSize: '16px',
-      // display: 'block',
     }
     const style2 = {
       backgroundColor: 'red',
@@ -25,7 +27,7 @@ function Buttons() {
 
   return (
   <>
-  <button style={style1}>Submit</button>
+  <button style={style1} onClick={() => clickHandler()}>Submit</button>
   <button style={style2}>Cancel</button>
   </>
   );
