@@ -75,3 +75,11 @@
   background-color: lightgrey;
   cursor: pointer;
 }
+.my-component{
+  text-align: center;
+  font-size: 24px;
+  color: darkblue;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0px;
+  background-color: lightyellow;
+}

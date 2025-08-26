@@ -5,6 +5,7 @@ import Buttons from "./Buttons.jsx"
 import Students from "./Students.jsx"
 import Greetings from "./Greetings.jsx"
 import Lists from "./Lists.jsx"
+import MyComponent from "./myComponent.jsx"
 
 function App() {
 var fruits = [{name:"Apple",calories:"app"},
@@ -36,6 +37,8 @@ var desserts = [{name:"Ice Cream",calories:207},
       {fruits.length > 0 ? (<Lists items={fruits} category="Fruits"/>) : undefined}
       {vegetables.length > 0 ? (<Lists items={vegetables} category="Vegetables"/>) : undefined}
       {desserts.length > 0 ? (<Lists items={desserts} category="Desserts"/>) : undefined}
+      <hr />
+      <MyComponent />
       <hr />
       <Footer />
     </>
