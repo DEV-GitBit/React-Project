@@ -75,11 +75,31 @@
   background-color: lightgrey;
   cursor: pointer;
 }
-.my-component{
+.main-component{
   text-align: center;
+  margin: 0px;
+  padding: 0px;
+  background-color: lightyellow;
+  display: flex;
+}
+.my-component{
   font-size: 24px;
   color: darkblue;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0px;
-  background-color: lightyellow;
+  flex:content;
+}
+.my-component2{
+  font-size: 24px;
+  color: darkblue;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0px;
+  flex:content;
+}
+.my-component3{
+  font-size: 24px;
+  color: darkblue;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0px;
+  flex:content;
 }
