@@ -103,3 +103,36 @@
   margin: 0px;
   flex:content;
 }
+.my-component4{
+  font-size: 24px;
+  color: darkblue;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0px;
+  flex:content;
+}
+.my-component5{
+  font-size: 24px;
+  color: darkblue;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0px;
+  flex:content;
+}
+.my-component5 label{
+  font-size: 20px;
+  color: darkblue;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.my-component6{
+  font-size: 24px;
+  color: darkblue;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0px;
+  flex:content;
+}
+
+footer{
+  text-align: center;
+  background-color: lightgrey;
+  padding: 10px;
+  font-size: larger;
+}
