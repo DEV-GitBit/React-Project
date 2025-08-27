@@ -6,6 +6,7 @@ import Students from "./Students.jsx"
 import Greetings from "./Greetings.jsx"
 import Lists from "./Lists.jsx"
 import MyComponent from "./myComponent.jsx"
+import ColorPicker from "./ColorPicker.jsx"
 
 function App() {
 var fruits = [{name:"Apple",calories:"app"},
@@ -39,6 +40,8 @@ var desserts = [{name:"Ice Cream",calories:207},
       {desserts.length > 0 ? (<Lists items={desserts} category="Desserts"/>) : undefined}
       <hr />
       <MyComponent />
+      <hr />
+      <ColorPicker />
       <hr />
       <Footer />
     </>
