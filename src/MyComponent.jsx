@@ -14,13 +14,13 @@ function MyComponent() {
         setName(newName);
     }   
     const onAgeIncrease = () => {
-        setAge(age + 1);
+        setAge(a => a + 1); // updater functions
     }
     const onAgeReset = () => {
         setAge(18);
     }
     const onAgeDecrease = () => {
-        setAge(age - 1);
+        setAge(a => a - 1);
     }
     const chkEmployed = () => {
         setIsEmployed(!isEmployed);
