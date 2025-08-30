@@ -7,6 +7,7 @@ import Greetings from "./Greetings.jsx"
 import Lists from "./Lists.jsx"
 import MyComponent from "./myComponent.jsx"
 import ColorPicker from "./ColorPicker.jsx"
+import MyComponent2 from "./MyComponent2.jsx"
 
 function App() {
 var fruits = [{name:"Apple",calories:"app"},

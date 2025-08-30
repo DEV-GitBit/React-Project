@@ -2,10 +2,12 @@ import PropTypes from 'prop-types';
 
 function Students({ name = 'Unknown', age = 0, isEnrolled = false }) {
     return (
+        <div className='main-student-card'>
         <div className='student-card'>
             <h2>Student Name: {name}</h2>
             <p>Age: {age}</p>
             <p>Enrolled: {isEnrolled ? 'Yes' : 'No'}</p>
+        </div>
         </div>
     );
 }

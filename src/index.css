@@ -1,3 +1,4 @@
+
 .card{
   border: 1px solid black;
   border-radius: 8px;
@@ -25,6 +26,16 @@
   color: #666;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* .main-student-card{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+} */
+Students {
+  background-color: #ef6565;
+  
+}
 .student-card {
   border: 1px solid black;
   margin: 2px;
@@ -32,8 +43,8 @@
   max-width: 350px;
   min-width: auto;
   border-radius: 8px;
-  /* box-shadow: 3px 3px 2px grey; */
-  /* display: inline-block; */
+  font-family:Arial, Helvetica, sans-serif;
+  /* flex-grow: 3; */
 }
 .welcome-msg {
   color: whitesmoke;
@@ -137,33 +148,44 @@ footer{
   font-size: larger;
 }
 
+.main-component-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
 .main-color-picker{
   text-align: center;
-  display: flex;
-  flex-direction: column;
   align-items: center;
+  display: flex;
+  margin: 0px;
+  flex-direction: column;
+}
+.main-color-picker h2{
+  color: darkblue;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .color-picker-container{
   width: 200px;
   height: 200px;
-  /* margin: auto; */
   border: 2px solid black;
   border-radius: 10px;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: 0.25s ease;
 }
 .color-picker-container p{
   font-size: 1.5rem;
   color: black;
-  text-align: center;
-  margin-top: 70px;
 }
 
 label{
   font-size: 20px;
   color: darkblue;
-  justify-content: center;
-  justify-items: center;
+  margin: auto;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 input[type="color"]{
@@ -172,4 +194,35 @@ input[type="color"]{
   width: 50px;
   cursor: pointer;
   border: 1px solid #ccc;
+}
+.car-form{
+  background-color: lightcyan;
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 15px;
+  max-width: 500px;
+  display: flex;
+  height: 150px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.car-form h2{
+  font-size: 22px;
+  color: darkblue;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 50px;
+}
+.car-inputs{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.car-inputs input{
+  /* margin: 0px 0px; */
+  padding: 5px;
+  font-size: 16px;
+  width: 150px;
+  /* border: 1px solid #ccc; */
+  /* border-radius: 4px; */
 }
