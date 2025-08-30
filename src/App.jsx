@@ -8,6 +8,7 @@ import Lists from "./Lists.jsx"
 import MyComponent from "./myComponent.jsx"
 import ColorPicker from "./ColorPicker.jsx"
 import MyComponent2 from "./MyComponent2.jsx"
+import ArrayHandler from "./ArrayHandler.jsx"
 
 function App() {
 var fruits = [{name:"Apple",calories:"app"},
@@ -43,6 +44,8 @@ var desserts = [{name:"Ice Cream",calories:207},
       <MyComponent />
       <hr />
       <ColorPicker />
+      <hr />
+      <ArrayHandler />
       <hr />
       <Footer />
     </>
