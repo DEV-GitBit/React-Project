@@ -5,13 +5,15 @@ function ArrayHandler(){
     const [food, setfood] = useState(["Apple","Banana","Cherry"]);
 
     function addItem(){
+    
         const Newfood = document.getElementById("newfood").value;
+        if(Newfood.trim() === "" || food.some(item => item.toLowerCase() === Newfood.trim().toLowerCase())) return;
         setfood(f => [...f, Newfood]);
         document.getElementById("newfood").value = "";
         }
 
     function removeItem(index){
-        setfood(f => f.filter((item, i) => i !== index));
+        setfood(f => f.filter((_, i) => i !== index));
     }
     
 
@@ -23,6 +25,7 @@ function ArrayHandler(){
             {food.map((item, index) => (
                 <li
                     key={index}
+                    className="food-items"
                     onClick={() => removeItem(index)}
                     style={{ cursor: 'pointer' }}
                 >
@@ -31,7 +34,7 @@ function ArrayHandler(){
             ))}
         </ul>
         <input type="text" id="newfood" placeholder="Add new food item"/>
-        <button onClick={addItem}>Add Item</button>
+        <button className="addfoodbutton" onClick={addItem}>Add Item</button>
         </div>
         </>
     )

@@ -219,10 +219,46 @@ input[type="color"]{
   gap: 10px;
 }
 .car-inputs input{
-  /* margin: 0px 0px; */
   padding: 5px;
   font-size: 16px;
   width: 150px;
-  /* border: 1px solid #ccc; */
-  /* border-radius: 4px; */
+}
+
+.array-handler{
+  background-color: lightcyan;
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 15px;
+  max-width: 600px;
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.array-handler h2{
+  font-size: 22px;
+  color: darkblue;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 0px;
+}
+.addfoodbutton{
+  background-color: darkblue;
+  color: white;
+  border: none;
+  padding: 6px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  margin-top: 10px;
+}
+.food-items{
+  margin-top: 3px;
+  max-height: 200px;
+  font-size: 20px;
+}
+#newfood{
+  font-size: 15px;
+  padding: 4px;
+  border-bottom: 1px solid grey;
 }

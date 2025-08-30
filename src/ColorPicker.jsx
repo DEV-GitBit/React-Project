@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import MyComponent2 from "./MyComponent2";
+import ArrayHandler from "./ArrayHandler";
 
 function ColorPicker() {
     const [color, setColor] = useState("#FFFFFF");
@@ -22,6 +23,8 @@ function ColorPicker() {
         </div>
 
         <MyComponent2 />
+        <ArrayHandler />
+
 
         </div>
         </>

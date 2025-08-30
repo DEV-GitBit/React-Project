@@ -45,8 +45,6 @@ var desserts = [{name:"Ice Cream",calories:207},
       <hr />
       <ColorPicker />
       <hr />
-      <ArrayHandler />
-      <hr />
       <Footer />
     </>
   )
